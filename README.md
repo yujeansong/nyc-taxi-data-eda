@@ -248,18 +248,7 @@ vehicles. Conversely, taxis tend to become pricier due to congestion
 charges, and fare calculations are influenced by travel time with
 passengers on board.
 
-#### Most Popular Day of the Week
-![pie](https://github.com/yujeansong/nyc-taxi-data-eda/assets/79759695/7be11e8c-019b-4c2b-b02c-4c04fe695cb1)
-
-#### Average Fare Gets Paid per Trip
-![barplot](https://github.com/yujeansong/nyc-taxi-data-eda/assets/79759695/9c33cbed-1da4-4bdc-a21b-3d2953080931)
-
-
-<figure>
-<img src="plots/liegraph.png" id="fig: Figure 2" style="width:70.0%"
-alt="Total Hourly Demand" />
-<figcaption aria-hidden="true">Total Hourly Demand</figcaption>
-</figure>
+<img width="551" alt="Screenshot 2023-12-24 at 9 40 50 pm" src="https://github.com/yujeansong/nyc-taxi-data-eda/assets/79759695/af84825c-423f-4c7b-85a4-05a1816dcc3c">
 
 ## Pick-up Demands Distributions
 
@@ -294,17 +283,8 @@ distribution, we generated a plot using the logarithm of the average
 daily demand. This adjustment was implemented to normalize the data and
 facilitate a more insightful comparison.
 
-<figure>
-<img src="plots/ch_hourly.png" id="fig: Figure 3a"
-alt="Total Hourly Demand" />
-<figcaption aria-hidden="true">Total Hourly Demand</figcaption>
-</figure>
+<img width="831" alt="Screenshot 2023-12-24 at 9 42 51 pm" src="https://github.com/yujeansong/nyc-taxi-data-eda/assets/79759695/f61d5468-1c3b-48aa-8e3c-fe6555cfb01e">
 
-<figure>
-<img src="plots/ch_revenue.png" id="fig: Figure 3b"
-alt="Revenue per Trip" />
-<figcaption aria-hidden="true">Revenue per Trip</figcaption>
-</figure>
 
 ## Weather and Taxi Trip Demands
 
@@ -315,18 +295,9 @@ data-reference="tab:anova2">2</a>. The study indicates that the presence
 of rain or snow did not play a statistically significant role in
 determining the total number of daily trips.
 
-<span id="tab:anova2" label="tab:anova2"></span>
+<img width="631" alt="Screenshot 2023-12-24 at 9 44 07 pm" src="https://github.com/yujeansong/nyc-taxi-data-eda/assets/79759695/9266a3b7-40ea-4666-bb39-84650560df59">
 
-<div id="tab:anova2">
 
-| SS          |   DF |    F | *P**r*(\>*F*) |
-|:------------|-----:|-----:|--------------:|
-| Temperature |    3 | 23.3 |      8.43e-11 |
-| Total       | 4342 |      |               |
-
-ANOVA Temperature and Total Number of Trips per Day
-
-</div>
 
 # Modelling
 
@@ -363,34 +334,8 @@ As a result, the SVM classification involves the creation of five
 separate hyperplanes, each responsible for distinguishing one of these
 classes.
 
-A separating Hyperplane in *D* dimensions can be defined by a normal *w*
-and an intercept *b*
+<img width="890" alt="Screenshot 2023-12-24 at 9 46 22 pm" src="https://github.com/yujeansong/nyc-taxi-data-eda/assets/79759695/f3196e95-756b-4402-af10-6c940525da69">
 
-*Y* = *X**β* + *ϵ*
-
-Example of an aligned equation (& denotes the symbol to align):
-$$\\begin{aligned}
-    \\mathbf{w} = \[w_1, w_2, \\dots, w_d\]\\end{aligned}$$
-The Hyperplane passing a point *x*
-$$\\begin{aligned}
-    w_1x_1+,\\dots,w_Dx_D+b = 0 \\end{aligned}$$
-Given the equation:
-*w⃗* ⋅ *x⃗* + *b* = 0
-
-Where:
-
--   *w⃗* and *x⃗* are column vectors.
-
--   The dot product *w⃗* ⋅ *x⃗* is usually written as
-    **w**<sup>⊺</sup>**x**.
-
--   For this modeling,
-    **w**<sub>**1**</sub>**,** **w**<sub>**2**</sub>**,** **w**<sub>**3**</sub>**,** **w**<sub>**4**</sub>**,** **w**<sub>**5**</sub>
-    features such as temperature, day of the week, hour, presence of an
-    event, and boroughs.
-
-Linear Classifier takes the form *f*(*x*) = **w**<sup>⊺</sup>**x** + *b*
-in multiple dimension spaces.
 
 # Discussion
 
