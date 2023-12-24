@@ -208,9 +208,11 @@ and event data.
 
 Based on our analysis, apart from location, we identified a robust
 correlation between taxi ride demand and both the day of the week and
-the time. As we can see in table
-<a href="#tab:anova1" data-reference-type="ref"
-data-reference="tab:anova1">1</a>, we did ANOVA between the day of the
+the time. 
+
+<img width="738" alt="Screenshot 2023-12-24 at 9 29 23 pm" src="https://github.com/yujeansong/nyc-taxi-data-eda/assets/79759695/742cf23a-0271-4f3b-b243-563c7a372235">
+
+As we can see in table, we did ANOVA between the day of the
 week and the total number of trips. The day of the week is a significant
 factor (P-value: 2.58 × 10<sup>−24</sup>) and it holds significant
 importance in understanding variations in trip numbers. As depicted in
@@ -229,19 +231,6 @@ boasts the highest average fare paid per trip. Although there exists a
 discernible difference compared to other weekdays, the distinction is
 particularly pronounced on Sunday.
 
-<span id="tab:anova1" label="tab:anova1"></span>
-
-<div id="tab:anova1">
-
-| SS          |   DF |    F | *P**r*(\>*F*) |
-|:------------|-----:|-----:|--------------:|
-| Day of Week |    6 | 20.9 |      2.85e-24 |
-| Total       | 4342 |      |               |
-
-ANOVA between the day of week and Total Number of Trips per Day
-
-</div>
-
 In Figure <a href="#fig: Figure 2" data-reference-type="ref"
 data-reference="fig: Figure 2">3</a>, a consistent pattern emerges
 across all days of the week in terms of total hourly demand. Notably,
@@ -259,19 +248,12 @@ vehicles. Conversely, taxis tend to become pricier due to congestion
 charges, and fare calculations are influenced by travel time with
 passengers on board.
 
-<figure>
-<img src="plots/pie.png" id="fig: Figure 1a"
-alt="The Most Popular Day of the Week" />
-<figcaption aria-hidden="true">The Most Popular Day of the
-Week</figcaption>
-</figure>
+#### Most Popular Day of the Week
+![pie](https://github.com/yujeansong/nyc-taxi-data-eda/assets/79759695/7be11e8c-019b-4c2b-b02c-4c04fe695cb1)
 
-<figure>
-<img src="plots/barplot.png" id="fig: Figure 1b"
-alt="Average Fare Gets Paid per Trip" />
-<figcaption aria-hidden="true">Average Fare Gets Paid per
-Trip</figcaption>
-</figure>
+#### Average Fare Gets Paid per Trip
+![barplot](https://github.com/yujeansong/nyc-taxi-data-eda/assets/79759695/9c33cbed-1da4-4bdc-a21b-3d2953080931)
+
 
 <figure>
 <img src="plots/liegraph.png" id="fig: Figure 2" style="width:70.0%"
